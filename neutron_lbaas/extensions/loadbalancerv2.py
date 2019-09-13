@@ -404,7 +404,7 @@ SUB_RESOURCE_ATTRIBUTE_MAP = {
                                'convert_to': converters.convert_to_boolean,
                                'is_visible': True},
             'subnet_id': {'allow_post': True, 'allow_put': False,
-                          'validate': {'type:uuid': None},
+                          'default': '',
                           'is_visible': True},
             'name': {'allow_post': True, 'allow_put': True,
                      'validate': {'type:string': db_const.NAME_FIELD_SIZE},
